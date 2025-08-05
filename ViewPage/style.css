@@ -1,0 +1,245 @@
+@import url(../animation.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.sec1 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size: 100%;
+    background-color: rgb(18, 18, 18);
+    position: relative;
+}
+
+
+
+.nav-bar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2%;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 10px 5px rgb(0, 0, 0, 0.65);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+
+
+.logo {
+    width: 3%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 5px rgb(30, 30, 30);
+    transition: all ease 0.5s;
+}
+
+.logo:hover {
+    box-shadow: 0px 0px 10px 2px #FF2F47;
+    transform: scale(1.1);
+}
+
+
+
+.links-nav {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.text-links {
+    color: white;
+    font-size: 1vw;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.text-links:hover {
+    color: #ffffff8d;
+}
+
+.text-links:focus {
+    transform: scale(0.8);
+    outline: none;
+}
+
+
+.content {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 110vh;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.background-dark {
+    width: 100%;
+    height: auto;
+    min-height: 110vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    position: absolute;
+    padding: 10% 0% 5% 4%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50vh;
+}
+
+
+
+.movie-img {
+    width: 75%;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin-top: 40%;
+    box-shadow: 0px 0px 20px 5px rgb(73, 73, 73);
+    animation: slideIn 0.5s ease forwards;
+}
+
+.container-text {
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    padding-right: 4%;
+    animation: slideRight 0.5s ease forwards;
+}
+
+.movie-title {
+    font-size: 6vw;
+    font-family: "Red Hat Display", sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.movie-genres,
+.movie-status,
+.number-seasons-episodes {
+    font-size: 1.1vw;
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+.movie-description {
+    font-size: 1.5vw;
+    margin-top: 5%;
+    text-align: justify;
+    overflow-y: scroll;
+    padding: 0% 1% 0% 0%;
+    font-family: "Titillium Web", sans-serif;
+
+}
+.movie-description::-webkit-scrollbar {
+    width: 2px;
+}
+
+.movie-description::-webkit-scrollbar-track {
+    background: rgb(8, 8, 8);
+}
+
+.movie-description::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 2px solid gray;
+}
+
+.sec2 {
+    width: 100%;
+    height: auto;
+    min-height: 5px;
+    background-size: 100%;
+    background-color: rgb(18, 18, 18);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5% 0%;
+}
+
+.div-season {
+    width: 80%;
+    height: 5vh;
+    background-color: rgb(30, 30, 30);
+    color: white; 
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 70% 10% 20%;
+    padding-left: 2%;
+    transition: all ease-in 0.2s;
+}
+
+.div-season:hover {
+    box-shadow: 0px 0px 10px 10px rgb(35, 35, 35);
+    transform: scale(1.05);
+    .name-of-season {
+        font-weight: bold;
+    }
+}
+
+.eps-of-season, .date-of-season {
+    display: grid;
+    place-items: center;
+    font-family: "Titillium Web", sans-serif;
+}
+.name-of-season {
+    display: grid;
+    align-items: center;
+    font-size: 1.2vw;
+    transition: all ease-in 0.2s;
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(8, 8, 8);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 2px solid #FF2F47;
+}

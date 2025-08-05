@@ -1,0 +1,206 @@
+@import url(../animation.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(18, 18, 18);
+}
+
+.sec1 {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-size: 100%;
+    background-color: rgb(18, 18, 18);
+    position: relative;
+}
+
+
+.nav-bar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2%;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 10px 5px rgb(0, 0, 0, 0.65);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+
+
+.logo {
+    width: 3%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 5px rgb(30, 30, 30);
+    transition: all ease 0.5s;
+}
+
+.logo:hover {
+    box-shadow: 0px 0px 10px 2px #FF2F47;
+    transform: scale(1.1);
+}
+
+
+
+.links-nav {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-search {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+}
+
+.fa-solid {
+    color: white;
+    cursor: pointer;
+}
+
+.input-search {
+    width: 0px;
+    border: none;
+    outline: none;
+    transition: all ease-out 0.2s;
+    background-color: rgb(18, 18, 18, 0.5);
+}
+
+
+.text-links {
+    color: white;
+    font-size: 1vw;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.text-links:hover {
+    color: #ffffff8d;
+}
+
+.text-links:focus {
+    transform: scale(0.8);
+    outline: none;
+}
+
+.title-of-page {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-left: 2%;
+    font-size: 3vw;
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+
+
+.div-all-movies {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto, 60vh);
+    gap: 0.1%;
+    padding-top: 5%;
+}
+
+
+.movie,
+.serie {
+    flex: 0 0 auto;
+    width: 80%;
+    height: 60vh;
+    color: white;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 10px 10px rgb(30, 30, 30);
+    border-radius: 2px;
+    padding-bottom: 3%;
+    z-index: 5;
+    transition: all ease-out 0.5s;
+}
+
+.movie:hover,
+.serie:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    box-shadow: 0px 0px 10px 2px #FF2451;
+}
+
+
+.movie-img,
+.serie-img {
+    width: 100%;
+    height: 80%;
+    border-radius: 2px;
+    margin-bottom: 4%;
+    z-index: 5;
+}
+
+.movie-title,
+.serie-title {
+    margin: 0% 0% 0% 2%;
+    z-index: 5;
+    font-size: 1.2vw;
+    font-family: "Titillium Web", sans-serif;
+    width: 100%;
+    height: 10vh;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.acessMovieLink {
+    text-decoration: none;
+    transition: all ease 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.acessMovieLink:focus {
+    z-index: 1000;
+    transform: scale(0.8);
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(8, 8, 8);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 2px solid #FF2F47;
+}
