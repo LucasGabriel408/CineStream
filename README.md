@@ -19,19 +19,15 @@ Plataforma de streaming simulada em HTML, CSS e JavaScript puro, consumindo a AP
 - Animações CSS de entrada (slideIn e slideRight)
 
 ## Estrutura
-CineStream/
-├── index.html         # Home
-├── scripts.js
-├── style.css
-├── animation.css
-├── AllPage/           # Listagem completa de filmes ou séries
-│   ├── index.html
-│   ├── scripts.js
-│   └── style.css
-└── ViewPage/          # Detalhes de filme ou série
-├── index.html
-├── scripts.js
-└── style.css
+
+| Pasta / Arquivo | Descrição |
+|---|---|
+| `index.html` | Home com hero dinâmico e carrosséis |
+| `scripts.js` | Lógica da home |
+| `style.css` | Estilos da home |
+| `animation.css` | Animações globais (slideIn, slideRight) |
+| `AllPage/` | Listagem completa de filmes ou séries |
+| `ViewPage/` | Página de detalhes de filme ou série |
 
 ## Como executar
 
